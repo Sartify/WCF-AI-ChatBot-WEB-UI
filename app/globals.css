@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --gray-100: #f5f5f5;
+    --gray-200: #e5e5e5;
+    --gray-300: #d4d4d4;
+    --gray-400: #a3a3a3;
+    --gray-500: #737373;
+    --gray-600: #525252;
+    --gray-700: #404040;
+    --gray-800: #262626;
+    --gray-900: #171717;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+}
+
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.woff2") format("woff2"),
+  url("/fonts/Satoshi-Variable.woff") format("woff"),
+  url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+  url("/fonts/Satoshi-VariableItalic.woff") format("woff"),
+  url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("/fonts/Satoshi-Light.woff2") format("woff2"),
+  url("/fonts/Satoshi-Light.woff") format("woff"),
+  url("/fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("/fonts/Satoshi-LightItalic.woff2") format("woff2"),
+  url("/fonts/Satoshi-LightItalic.woff") format("woff"),
+  url("/fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/fonts/Satoshi-Regular.woff2") format("woff2"),
+  url("/fonts/Satoshi-Regular.woff") format("woff"),
+  url("/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("/fonts/Satoshi-Italic.woff2") format("woff2"),
+  url("/fonts/Satoshi-Italic.woff") format("woff"),
+  url("/fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+  url("/fonts/Satoshi-Medium.woff") format("woff"),
+  url("/fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+  url("/fonts/Satoshi-MediumItalic.woff") format("woff"),
+  url("/fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2"),
+  url("/fonts/Satoshi-Bold.woff") format("woff"),
+  url("/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("/fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+  url("/fonts/Satoshi-BoldItalic.woff") format("woff"),
+  url("/fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2"),
+  url("/fonts/Satoshi-Black.woff") format("woff"),
+  url("/fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+  url("/fonts/Satoshi-BlackItalic.woff") format("woff"),
+  url("/fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Bold";
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Regular";
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: "Satoshi-Regular", sans-serif;
+  background-color: #ffffff;
+}
+
+.h-chat{
+  height: 68vh;
+}
+
+.gap-main {
+  gap: 1rem;
+}
+
+.bg-image-chat {
+  position: relative;
+  background-image: url('/wcf.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .h-chat {
+    height: 68vh;
+  }
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .h-chat {
+    height: 81vh;
+  }
+
+  .gap-main {
+    gap: 3rem;
+  }
+}
+
+@media (width: 640px) and (height: 360px) {
+  .gap-main {
+    gap: 1rem;
+  }
+
+  .h-chat {
+    height: 49vh;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h-chat {
+    height: 85vh;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 790px) and (max-width: 1199.98px) {
+  .gap-main {
+    gap: 3rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .h-chat {
+    height: 80vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .h-chat {
+    height: 72vh;
+  }
+  .gap-main {
+    gap: 2em;
+  }
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  display: none;
+}
