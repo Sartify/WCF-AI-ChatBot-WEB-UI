@@ -1,4 +1,3 @@
-"use server";
 export async function dosaveFeedBacks(data: Record<string, any>): Promise<any> {
     const url = new URL(`${process.env.NEXT_PUBLIC_CHAT_API}/user-feedbacks`);
     const headers = new Headers();
