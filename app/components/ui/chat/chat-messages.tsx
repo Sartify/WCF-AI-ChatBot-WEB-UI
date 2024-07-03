@@ -19,7 +19,7 @@ export default function ChatMessages(
   const [showModal, setShowModal] = useState<boolean>(false);
   const [additionalFeedback, setAdditionalFeedback] = useState<string>("");
 
-  const questionsToStart = "I want to review my claims and status about it, Give technical details to integrate with WCF API, What is the establishment of this fund?, What is the procedure for applying for a loan?";
+  const questionsToStart = "I want to review my claims and status about it, can intergrate medical WCF APIs to my hospital ?, What is the purpose for the establishment of this fund?, How to join and contribute to the fund?";
   const questionsList = questionsToStart.split(", ") || [];
   const scrollableChatContainerRef = useRef<HTMLDivElement>(null);
   const messageLength = props.messages.length;

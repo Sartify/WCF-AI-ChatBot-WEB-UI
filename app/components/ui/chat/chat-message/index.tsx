@@ -56,12 +56,12 @@ export default function ChatMessage({
       
       <div className="group flex flex-1 justify-between gap-2">
       {chatMessage.role === "user" ? (
-      <div className="bg-green-500/10 py-2 px-2 rounded-lg">
+      <div className="bg-green-500/10 py-2 px-2 rounded-lg text-sm">
         <ChatMessageContent message={chatMessage} isLoading={isLoading} />
       </div>
     ) : (
       
-      <div>
+      <div className="text-sm">
         <ChatMessageContent message={chatMessage} isLoading={isLoading} />
       </div>
       
