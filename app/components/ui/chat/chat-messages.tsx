@@ -25,6 +25,7 @@ export default function ChatMessages(
   const messageLength = props.messages.length;
   const lastMessage = props.messages[messageLength - 1];
 
+  
   const scrollToBottom = () => {
     if (scrollableChatContainerRef.current) {
       scrollableChatContainerRef.current.scrollTop =
