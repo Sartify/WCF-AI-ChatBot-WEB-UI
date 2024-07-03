@@ -1,7 +1,7 @@
 import { User2 } from "lucide-react";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa6";
-
+import { FaRobot } from "react-icons/fa6";
 
 
 export default function ChatAvatar({ role }: { role: string }) {
@@ -14,15 +14,8 @@ export default function ChatAvatar({ role }: { role: string }) {
   }
 
   return (
-    <div className="flex h-8 w-8 shrink-0 select-none items-center justify-center rounded-md  text-white shadow">
-      <Image
-        className="rounded-md"
-        src="/wcf.png"
-        alt="WCF Logo"
-        width={28}
-        height={28}
-        priority
-      />
+    <div className="flex h-8 w-8 shrink-0 select-none items-center justify-center rounded-md shadow">
+      <FaRobot className="h-5 w-5" />
     </div>
   );
 }
